@@ -1,0 +1,208 @@
+.hero {
+    padding-block-start: 10px;
+    background-color: black;
+  }
+
+.card {
+    --padding: 22px;
+    display: flex; flex-direction: column;
+    border-radius: var(--radius-8);
+    overflow: hidden;
+    gap: 20px
+  }
+
+.cardList {
+    background-color: #cdcdcd; color: black; margin-top: 20px; padding: 15px;
+    width: 100%;
+    /* display:inline-grid; grid-template-columns: repeat(4, 1fr); */
+    display: flex; flex-direction: row;
+    align-content: stretch;
+    justify-content: stretch;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  color: white;
+  margin-block: 10px 0px;
+}
+
+
+/* Rating us Evolearn Section */
+.download {
+  text-align: center;
+  position: relative;
+}
+
+.about-us-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-us {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  padding: 30px 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.about-us:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-us img:first-child {
+  width: 130px;
+  margin-bottom: 10px;
+}
+
+.about-us img:nth-child(2) {
+  width: 180px;
+  margin-bottom: 20px;
+}
+
+.about-us p {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.about-us b {
+  display: block;
+  margin-top: 15px;
+  font-weight: 600;
+  color: #1f2d5a;
+}
+
+
+/* TESTIMONIALS */
+.testimonialSection {
+  background: radial-gradient(circle at bottom, #d6ddf0 10%, #fff 90%);
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.testimonialSection h3 {
+  font-size: 2.4rem;
+  margin-bottom: 40px;
+  color: #1f2d5a;
+}
+
+.carouselCards {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* max-width: 1200px; */
+  /* margin: 0 auto; */
+  /* overflow: hidden; */
+}
+
+.carouselWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  /* overflow-x: auto; */
+  scroll-behavior: smooth;
+  padding: 20px 10px;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+.carouselWrapperCenter::-webkit-scrollbar,
+.carouselWrapper::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.carouselCard,
+.clearCarouselCard {
+  display: flex; flex-direction: column;
+  text-align: center; align-items: center;
+  flex: 0 0 260px;
+  background-color: #ffffff;
+  border-radius: var(--border-radius);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  padding: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.clearCarouselCard {
+  padding: 0px;
+  background-color: #00000000;
+}
+
+.carouselCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+.carouselCard h4 {
+  font-size: 1.1rem;
+  color: #1f2d5a;
+  margin-bottom: 5px;
+}
+
+.carouselCard p {
+  font-size: 1.8rem;
+  color: black;
+}
+.clearCarouselCard p {
+  font-size: 1.8rem;
+  color: white;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .hero-content {
+    display: flex; flex-direction: column;
+    gap: 25px;
+    align-items: center;
+  }
+
+    .cardList {
+      flex-direction: column;
+  }
+  
+  .carouselWrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 16px;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding: 10px;
+  }
+
+  .carouselWrapper::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+  }
+
+  .carouselCards {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .carouselCard {
+    flex: 1 1 auto; /* Allow cards to fill grid cells */
+  }
+
+  .carouselCard:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .carouselCard h4 {
+    font-size: 1rem;
+    color: #1f2d5a;
+    margin-bottom: 5px;
+  }
+}
