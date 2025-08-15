@@ -116,7 +116,7 @@ html {
 }
 
 body {
-  background-color: var(--white);
+  background-color: black;
   color: var(--black-coral);
   font-size: 1.6rem;
   line-height: 1.7;
