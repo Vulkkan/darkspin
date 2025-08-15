@@ -25,7 +25,7 @@
   <!-- =============== HEADER ===============-->
   <header class="header" data-header>
     <div class="container">
-      <a href="#" class="logo-txt">Darkspin</a>
+      <a href="index.html" class="logo-txt">Darkspin</a>
 
       <!--- Navbar -->
       <nav class="navbar" data-navbar>
@@ -48,26 +48,48 @@
 
   <main>
     <article>
-      <!-- HERO -->
+      <!-- =============== HERO ===============-->
       <section class="section hero" aria-label="home" id="home">
         <div class="container">
           <!-- HERO TEXT-->
           <div class="hero-content" style="margin-top: 80px;">
-            <br><br>
-            <h1 class="h1 hero-h1" data-reveal="top" data-reveal-delay="0.1s">Download APK</h1>
+            <br>
+            <h1 class="h1 hero-h2" data-reveal="right" data-reveal-delay="0.1s">Download App</h1>
             
-            <a href="https://github.com/Vulkkan/darkspin-app/releases/download/v1.0.0/armeabi-v7a.apk" class="btn btn-secondary">Download APK</a>
-
-            <br><br>
-            <p class="sectionTitle" data-reveal="right" data-reveal-delay="0.2s">
-              Advanced Download
-            </p>
-            <!-- =============== BUTTONS ===============-->
-            <div style="display: flex; flex-direction: row; gap: 20px">
-              <a href="https://github.com/Vulkkan/darkspin-app/releases/download/v1.0.0/arm64-v8a.apk" id="arm64-download-btn" class="btn btn-secondary">(arm64)</a>
-
-              <a href="https://github.com/Vulkkan/darkspin-app/releases/download/v1.0.0/armeabi-v7a.apk" id="armeabi-download-btn" class="btn btn-secondary">(armeabi-v7a)</a>
+            <div style="display: flex; flex-direction: column; align-items: center;">
+               <a href="assets/APK/armeabi-v7a.apk" class="btn btn-secondary" data-reveal="right" data-reveal-delay="0.2s">Download</a>
             </div>
+
+          <!-- =============== SOCIALS ===============-->
+          <div class="container" style="margin: 40px 10px;" data-reveal="right" data-reveal-delay="0.4s">
+            <p class="sectionTitle" >Join the community</p>
+            <a style="margin-bottom: 10px;">Stay in touch with updates.</a>
+
+            <div style="display: flex; flex-direction: row;   justify-content: center; gap: 20px" data-reveal="right" data-reveal-delay="0.5s">
+
+              <!-- Telegram -->
+              <a href="https://t.me/darkspin_updates" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                Telegram
+              </a>
+
+              <!-- Twitter (X) -->
+              <a href="https://twitter.com/VulkkanSpyder" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                Twitter (X)
+              </a>
+            </div>
+          </div>
+
+          <!-- =============== ADVANCED DOWNLOAD ===============-->
+          <div class="container">
+            <p class="sectionTitle" data-reveal="right" data-reveal-delay="0.4s">Custom download</p>
+
+            <div style="display: flex; flex-direction: row;   justify-content: center; gap: 20px" data-reveal="right" data-reveal-delay="0.5s">
+              <a href="assets/APK/arm64-v8a.apk" id="arm64-download-btn" class="btn btn-secondary">(arm64)</a>
+              <a href="assets/APK/armeabi-v7a.apk" id="armeabi-download-btn" class="btn btn-secondary">(armeabi-v7a)</a>
+            </div>
+
+          </div>
+            
             <br><br>
             </div>
           </div>
@@ -85,9 +107,6 @@
   <script src="./assets/js/script.js"></script>
 
   <script>
-    // Ensure Enhanced Measurement is enabled in GA4:
-    // Admin → Data Streams → Your stream → Enhanced Measurement → Toggle "File downloads" ON
-  
     const arm64Btn = document.getElementById('arm64-download-btn');
     const armeabiBtn = document.getElementById('armeabi-download-btn');
   

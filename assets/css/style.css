@@ -179,16 +179,17 @@ body.nav-active { overflow: hidden; }
 
 .h4 { font-size: var(--fs-4); }
 
-.btn {
+.btn,
+.btn-primary:is(:hover, :focus-visible) {
   background-color: var(--manatee);
   color: var(--white);
   border: none;
   border-radius: var(--radius-pill);
 
-  font-size: var(--fs-7);
+  font-size: 1.35rem;
   font-weight: var(--fw-550);
   max-width: max-content;
-  padding: 5px 15px;
+  padding: 5px 12px;
   transition: var(--transition-1);
   will-change: transform;
 }
@@ -202,16 +203,12 @@ body.nav-active { overflow: hidden; }
 }
 
 .section-text { 
-  font-size: var(--fs-5); 
+  font-size: 1.6rem; 
   color: rgb(182, 182, 182);
 }
 
-.section-title { margin-block-end: 16px; }
 
-.grid-list {
-  display: grid;
-  gap: 30px;
-}
+
 
 [data-reveal] {
   opacity: 0;
@@ -267,12 +264,6 @@ body.nav-active { overflow: hidden; }
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.h-title {
-  font-family: var(--ff-psans);
-  font-size: 150%;
-  font-weight: 1000;
 }
 
 .nav-open-btn {
@@ -433,7 +424,6 @@ body {
 }
 
 
-
 .hero-banner {
   position: relative;
   max-width: max-content;
@@ -474,7 +464,6 @@ body {
   align-items: center;
   gap: 10px;
 }
-
 
 
 
@@ -592,34 +581,6 @@ body {
   padding-block-end: 0; 
 }
 
-/* .project-card-2 {
-  padding-top: 0; 
-} */
-
-.project :is(.project-card-3, .project-card-4) { gap: 0; 
-}
-
-.project-card .card-tag {
-  font-size: var(--fs-8);
-  font-weight: var(--fw-700);
-  text-transform: uppercase;
-}
-
-.project-card .card-title { margin-block: 16px; }
-
-.project-card .card-text { margin-block-end: 20px; }
-
-.project-card .btn-text {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  font-weight: var(--fw-700);
-  transition: var(--transition-1);
-}
-
-.project-card .btn-text:is(:hover, :focus-visible) { gap: 10px; }
-
-
 
 
 
@@ -627,17 +588,13 @@ body {
   #CONTACT
 \*-----------------------------------*/
 
-.contact { padding-block-end: 0; }
-
 .contact-card {
-  background-color: rgb(236, 187, 255);
+  background-color: #d5d5d5db;
   padding: 32px;
   border-radius: var(--radius-8);
   display: grid;
   gap: 40px;
 }
-
-.contact .section-title { margin-block-start: 20px; }
 
 .input-field {
   background-color: var(--white);
@@ -898,7 +855,6 @@ textarea.input-field {
   .about .grid-list { grid-template-columns: repeat(4, 1fr); }
 
 
-
   /**
    * PROJECT
    */
@@ -913,7 +869,7 @@ textarea.input-field {
   .project-card-1,
   .project-card-2 {
     flex-direction: row;
-    align-items: flex-end;
+    /* align-items: flex-end; */
   }
 
   :is(.project-card-1, .project-card-2) .card-content { width: 33.33%; }
