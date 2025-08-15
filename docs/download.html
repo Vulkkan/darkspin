@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-XXXXXXXXXX'); // Replace with your GA4 Measurement ID
-</script>
-
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5LCDT51SPY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-5LCDT51SPY');
+  </script> <!-- Google tag (gtag.js) -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -60,8 +58,7 @@
             <br><br>
             <h1 class="h1 hero-h1" data-reveal="top" data-reveal-delay="0.1s">Download APK</h1>
             
-            <p id="device-label"class="sectionTitle" data-reveal="right" data-reveal-delay="0.2s"></p>
-            <a id="primary-download-btn" class="btn btn-secondary">Download APK</a>
+            <a href="https://github.com/Vulkkan/darkspin/releases/download/v1.0.0/app-armeabi-v7a.apk" class="btn btn-secondary">Download APK</a>
 
             <br><br>
             <p class="sectionTitle" data-reveal="right" data-reveal-delay="0.2s">
@@ -69,8 +66,8 @@
             </p>
             <!-- =============== BUTTONS ===============-->
             <div style="display: flex; flex-direction: row; gap: 20px">
-              <a id="arm64-download-btn" class="btn btn-secondary">(arm64)</a>
-              <a id="armeabi-download-btn" class="btn btn-secondary">(armeabi-v7a)</a>
+              <a href="https://github.com/Vulkkan/darkspin/releases/download/v1.0.0/app-arm64-v8a.apk" id="arm64-download-btn" class="btn btn-secondary">(arm64)</a>
+              <a href="https://github.com/Vulkkan/darkspin/releases/download/v1.0.0/app-armeabi-v7a.apk" id="armeabi-download-btn" class="btn btn-secondary">(armeabi-v7a)</a>
             </div>
             <br><br>
             </div>
@@ -88,49 +85,15 @@
 
   <script src="./assets/js/script.js"></script>
 
-  <!-- ionicon link -->
-  <!-- <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> -->
-
-
   <script>
-    const deviceLabel = document.getElementById('device-label');
-
-    const downloadBtn = document.getElementById('primary-download-btn');
+    // Ensure Enhanced Measurement is enabled in GA4:
+    // Admin → Data Streams → Your stream → Enhanced Measurement → Toggle "File downloads" ON
+  
     const arm64Btn = document.getElementById('arm64-download-btn');
     const armeabiBtn = document.getElementById('armeabi-download-btn');
   
-    // APK links
-    const apkArm64 = "https://github.com/Vulkkan/darkspin/releases/download/v1.0.0/app-arm64-v8a.apk";
-    const apkArmeabi = "https://github.com/Vulkkan/darkspin/releases/download/v1.0.0/app-armeabi-v7a.apk";
-
-    // Detect ABI from user agent
-    const ua = navigator.userAgent.toLowerCase();
-    let apkLink = apkArmeabi;
-    let deviceType = "armeabi-v7a";
-  
-    if (ua.includes("arm64") || ua.includes("aarch64")) {
-      apkLink = apkArm64;
-      deviceType = "arm64";
-    } else if (ua.includes("armeabi")) {
-      apkLink = apkArmeabi;
-      deviceType = "armeabi-v7a";
-    }
-  
-    deviceLabel.textContent = "Device detected: " + deviceType;
-    downloadBtn.href = apkLink;
-    arm64Btn.href = apkArm64;
-    armeabiBtn.href = apkArmeabi;
-  
-    // === TRACKING EVENTS ===
-    downloadBtn.addEventListener("click", () => {
-      gtag('event', 'download', {
-        'event_category': 'APK',
-        'event_label': deviceType,
-        'value': 1
-      });
-    });
-  
+    // This will send a custom architecture-specific event to GA4
+    // The automatic GA4 file download event will still trigger from the href link
     arm64Btn.addEventListener("click", () => {
       gtag('event', 'download', {
         'event_category': 'APK',
@@ -150,4 +113,3 @@
 
 </body>
 </html>
-
