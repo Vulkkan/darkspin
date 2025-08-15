@@ -2,6 +2,8 @@
 
 The offline tiktok-like video player..
 
+[![Made with Flutter](https://img.shields.io/badge/Made%20with-Flutter-02569B?logo=flutter&logoColor=white)](https://flutter.dev)
+
 
 📜 License
 
