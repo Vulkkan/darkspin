@@ -3,7 +3,8 @@
   "sponsorship": {
     "title": "Buy me a coffee ☕",
     "link": "https://example.com",
-    "description": "Support my work by buying me a coffee!"
+    "description1": "Appreciate the app?",
+    "description2": "You can support my work by buying me a coffee!"
   },
   "updates": {
     "version": "1.0.1",
@@ -11,3 +12,4 @@
     "apkUrl": "https://vulkkan.github.io/darkspin/assets/APK/app-arm64-v8a-release.apk"
   }
 }
+
