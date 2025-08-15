@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Vick - Developer</title>
+  <meta name="title" content="Vick - Developer">
+
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+
+  <link rel="stylesheet" href="./assets/css/shared-styles.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- <link rel="preload" as="image" href="./assets/images/hero-banner.jpg"> -->
+</head>
+
+
+<body>
+  <!-- =============== HEADER ===============-->
+  <header class="header" data-header>
+    <div class="container">
+      <a href="#" class="logo-txt">Darkspin</a>
+
+      <!--- Navbar -->
+      <nav class="navbar" data-navbar>
+        <!--- Navbar list -->
+        <ul class="navbar-list">
+          <li>
+            <a href="#home" class="navbar-link">Home</a>
+          </li>
+          <li>
+            <a href="#projects" class="navbar-link">Screenshots</a>
+          </li>
+          <li>
+            <a href="#contact" class="navbar-link">Contact</a>
+          </li>
+        </ul> <!--- Navbar list -->
+      </nav> <!--- Navbar -->
+    </div>
+  </header> <!-- =============== HEADER ===============-->
+
+
+  <main>
+    <article>
+      <!-- HERO -->
+      <section class="section hero" aria-label="home" id="home">
+        <div class="container">
+          <!-- HERO TEXT-->
+          <div class="hero-content" style="margin-top: 80px;">
+            <h1 class="h1 hero-h1" data-reveal="top" data-reveal-delay="0.1s">The offline</h1>
+            <h1 class="h1 hero-h2" data-reveal="top" data-reveal-delay="0.2s">tiktok-like</h1>
+            <h1 class="h1 hero-h3" data-reveal="top" data-reveal-delay="0.3s">video player</h1>
+
+            <p class="section-text" data-reveal="right" data-reveal-delay="0.5s">
+              Play offline videos in a fullscreen  <br>
+              continuous-scrolling interface, like Tiktok.
+            </p>
+
+          <!--- Contact me button -->
+          <div class="btn-wrapper" data-reveal="left" data-reveal-delay="0.6s">
+            <a href="download.html" class="btn btn-secondary">Download</a>
+          </div>
+          </div>
+
+          <!--- HERO IMAGE -->
+          <!-- <img src="../assets/images/icon.png" class='hero-img' alt="Vick" data-reveal="bottom" data-reveal-delay="0.3s"/> -->
+        </div>
+      </section>
+
+      <!-- FEATURES-->
+      <section class="section project" aria-labelledby="project-label" id="projects">
+        <div class="container">
+          <div class="title-wrapper" data-reveal="top">
+            <div>
+              <h2 class="h2 section-title" id="project-label">Features</h2>
+            </div>
+            <!-- View Source-->
+            <a href="https://github.com/Vulkkan/Darkspin" class="btn btn-secondary">View Source</a>
+          </div>
+
+          <ul class="grid-list">
+            <li data-reveal="bottom">
+              <div class="about-card">
+                <div class="card-icon">
+                </div>
+                <h3 class="h3 card-title">☠️  Fully offline</h3>
+                <!-- <p class="card-text">
+                  Tensorflow | PyTorch | OpenCV
+                </p> -->
+              </div>
+            </li>
+            <li data-reveal="bottom">
+              <div class="about-card">
+                <div class="card-icon">
+                </div>
+                <h3 class="h3 card-title">☠️  No telemetry or tracking</h3>
+                <!-- <p class="card-text">
+                  Tensorflow | PyTorch | OpenCV
+                </p> -->
+              </div>
+            </li>
+            <li data-reveal="bottom">
+              <div class="about-card">
+                <div class="card-icon">
+                </div>
+                <h3 class="h3 card-title">☠️  Customize the source folder</h3>
+                <!-- <p class="card-text">
+                  Tensorflow | PyTorch | OpenCV
+                </p> -->
+              </div>
+            </li>
+          </ul>
+          
+          <!-- <div class="project-card project-card-1" style="background-color: #ababab; color: black">
+            <div class="card-content" data-reveal="left" style="display: flex; flex-direction: column; margin-bottom: 20px; gap: 10px;">
+              <h4>Fully offline.</h4>
+            </div>
+            <iframe width="280" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1" loading="lazy" alt="TicTacToeAI"></iframe>
+            <video width="280" height="315" src="assets/screenshots/vid.mp4?autoplay=1&mute=1" loading="lazy"></video>
+          </div> -->
+          
+        </div>
+      </section>
+
+
+      <!-- CONTACT -->
+      <section class="section contact" aria-label="contact" id="contact">
+        <div class="container">
+          <div class="contact-card">
+            <div class="contact-content" data-reveal="left">
+              <div class="card-icon">
+                <img src="./assets/images/icon-5.svg" width="44" height="44" loading="lazy" alt="envelop icon">
+              </div>
+
+              <h2 class="h3 section-title" style="color: rgb(0, 0, 0);">Developer Contact</h2>
+
+              <h4 style="font-weight: 700; color: rgb(0, 0, 0);">Email</h4>
+              <p style="margin-bottom: 15px; color: rgb(39, 39, 39);">victoriano.3996@gmail.com</p>
+
+              <h4 style="font-weight: 700; color: rgb(0, 0, 0);">Github</h4>
+              <p style="margin-bottom: 15px; color: rgb(39, 39, 39);">https://github.com/Vulkkan</p>
+
+            </div>
+
+            <!-- <form action="" class="contact-form" data-reveal="right">
+              <div class="input-wrapper">
+                <input type="text" name="name" placeholder="Name" required class="input-field">
+                <input type="email" name="email_address" placeholder="me@mail.com" required class="input-field">
+              </div>
+
+              <textarea name="message" placeholder="Message" required class="input-field"></textarea>
+              <button type="submit" class="btn btn-secondary">Send message</button>
+            </form> -->
+
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+
+
+  <!-- FOOTER-->
+  <footer class="footer">
+    <div class="container">
+      <!-- <p class="copyright">© 2024 vick</p> -->
+    </div>
+  </footer>
+
+  <!-- custom js link -->
+  <script>
+    document.body.classList.add("dark_theme");
+  </script>
+
+  <script src="./assets/js/script.js"></script>
+
+  <!-- ionicon link -->
+  <!-- <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> -->
+
+</body>
+</html>
+
