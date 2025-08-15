@@ -1,10 +1,10 @@
 {
-  "sponsorshipAvailable": true,
+  "sponsorshipAvailable": false,
   "sponsorship": {
-    "title": "Surfshark VPN 🔥🔥🔥",
-    "link": "https://surfshark.com",
-    "description1": "SURF THE INTERNET SAFER!",
-    "description2": "Use the code SPYDER for 20% off!!!"
+    "title": "Buy me a coffee ☕",
+    "link": "https://example.com",
+    "description1": "Appreciate the app?",
+    "description2": "You can support my work by buying me a coffee!"
   },
   "updates": {
     "version": "1.0.1",
