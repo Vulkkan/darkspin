@@ -1,14 +1,13 @@
 {
+  "sponsorshipAvailable": true,
   "sponsorship": {
-    "title": "Surfshark VPN 🔥🔥🔥",
-    "link": "https://surfshark.com",
-    "description": "Use the code SPYDER for 20% off!!!"
+    "title": "Buy me a coffee ☕",
+    "link": "https://example.com",
+    "description": "Support my work by buying me a coffee!"
   },
   "updates": {
-    "available": true,
-    "version": "1.1.0",
-    "message": "New dark mode themes added!",
+    "version": "1.0.1",
+    "message": "Bug fixes and improvements.",
     "apkUrl": "https://vulkkan.github.io/darkspin/assets/APK/app-arm64-v8a-release.apk"
   }
 }
-
